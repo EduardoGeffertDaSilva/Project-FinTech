@@ -6,243 +6,168 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fintech</title>
+    <title>Fintech - Minhas Metas</title>
     <link rel="stylesheet" href="./css/styles.css">
     <!--npm run build = para rodar o tailwind "!!!!!!"-->
 
 </head>
-<body>
+<body class="bg-[#f8fafc] font-sans antialiased text-gray-900 min-h-screen">
    
-    <header>
-
-        <picture>
-
-            <img src="./image/FP.png" alt="Logo Finances P">
-
+    <header class="bg-[#3b597a] text-white px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 shadow-md">
+        <picture class="h-14 flex items-center">
+            <img src="./image/FP.png" alt="Logo Finances P" class="h-14 object-contain mix-blend-multiply">
         </picture>
 
-        <nav>
-
-            <a href="./">DASHBOARD</a>
-
-            <a href="./">METAS</a>
-
-            <a href="./">FINANÇAS</a>
-
-            <a href="./">PERFIL</a>
+        <nav class="flex flex-wrap justify-center items-center gap-6 tracking-wide font-semibold text-sm sm:text-base">
+            <a href="./" class="hover:text-gray-200 transition-colors">DASHBOARD</a>
+            <a href="./" class="border-b-2 border-white pb-1">METAS</a>
+            <a href="./" class="hover:text-gray-200 transition-colors">FINANÇAS</a>
+            <a href="./" class="hover:text-gray-200 transition-colors">PERFIL</a>
             
-            <picture>
-
-                <img src="./image/homem.png" alt="Homem">
-
+            <picture class="sm:ml-2">
+                <img src="./image/homem.png" alt="Homem" class="w-10 h-10 rounded-full border-2 border-white object-cover">
             </picture>
-
         </nav>
-
     </header>
 
-    <main>
+    <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
 
-        <section>
-
+        <section class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
             <div>
-            
-                <h1>Minhas Metas</h1>
-                <p>Acompanhe o progresso das suas metas e conquiste os seus sonhos</p>
-            
+                <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900 mb-1">Minhas Metas</h1>
+                <p class="text-gray-500 text-xs sm:text-sm font-mono tracking-tighter">Acompanhe o progresso das suas metas e conquiste os seus sonhos</p>
             </div>
 
-            <div>
+            <div class="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
+                <button class="bg-[#5c728a] hover:bg-[#4a5c70] text-white font-medium px-5 py-2.5 rounded-xl shadow-sm flex items-center gap-2 transition-all text-sm sm:text-base">
+                    <span class="text-lg font-bold">+</span> Nova Meta
+                </button>
 
-                <button><span>+</span>NovaMeta</button>
-
-                <div>
-
-                    <img src="./image/sino.png" alt="Notificação">
-
+                <div class="border border-gray-200 p-2.5 rounded-xl cursor-pointer hover:bg-gray-100 transition-all bg-white shadow-sm flex items-center justify-center">
+                    <img src="./image/sino.png" alt="Notificação" class="w-5 h-5">
                 </div>
-
             </div>
-
-            
         </section>
 
-        <section>
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-            <aside>
-
-                <div>
-                    
-                    <div>
-
-                        <img src="./image/plane.png" alt="Avião">
-
+            <aside class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between min-h-[175px]">
+                <div class="flex justify-between items-start">
+                    <div class="flex gap-4">
+                        <div class="bg-[#b4cce6] p-3 rounded-xl flex items-center justify-center w-14 h-14 shrink-0">
+                            <img src="./image/plane.png" alt="Avião" class="w-7 h-7 object-contain mix-blend-multiply">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800 tracking-tight">Viagem Natal</h2>
+                            <p class="text-gray-500 font-mono text-xs sm:text-sm mt-0.5">R$ 5.000 <span class="text-gray-400 font-sans text-xs">de</span> R$ 20.000</p>
+                        </div>
                     </div>
-                
-                    <div>
-
-                        <h2>Viagem Natal</h2>
-                        <p>R$5.000 de R$20.000</p>
-
-                    </div>
-
-                    <div>
-
-                        <img src="./image/3 pontos.png" alt="Icone 3 pontos">
-
-                    </div>
+                    <button class="p-1 hover:bg-gray-50 rounded-full transition-colors flex items-center justify-center">
+                        <img src="./image/3 pontos.png" alt="Icone 3 pontos" class="w-5 h-5">
+                    </button>
                 </div>
 
-                <div>
-
-                    <div></div>
-                    <div></div>
-
-                    <p>25%</p>
-
+                <div class="mt-5 mb-3 flex items-center justify-between gap-4">
+                    <div class="w-full bg-[#dfdfdf] h-4 rounded-full overflow-hidden">
+                        <div class="bg-[#31af59] h-full rounded-full" style="width: 25%;"></div>
+                    </div>
+                    <p class="font-mono text-xs text-gray-600 font-semibold shrink-0">25%</p>
                 </div>
 
-                <div>
-
-                    <img src="./image/calendario.png" alt="Calendario">
-
-                    <data value="dia 12 do 8 de 2031">12/08/2031</data>
-
+                <div class="flex items-center gap-2 text-gray-500 font-mono text-xs">
+                    <img src="./image/calendario.png" alt="Calendario" class="w-4 h-4">
+                    <data value="12/08/2031">12/08/2031</data>
                 </div>
-
             </aside>
 
-            <aside>
-
-                <div>
-                    
-                    <div>
-
-                        <img src="./image/car.png" alt="Carro">
-
+            <aside class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between min-h-[175px]">
+                <div class="flex justify-between items-start">
+                    <div class="flex gap-4">
+                        <div class="bg-[#f0f4c3] p-3 rounded-xl flex items-center justify-center w-14 h-14 shrink-0">
+                            <img src="./image/car.png" alt="Carro" class="w-7 h-7 object-contain mix-blend-multiply">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800 tracking-tight">Carro</h2>
+                            <p class="text-gray-500 font-mono text-xs sm:text-sm mt-0.5">R$ 3.000 <span class="text-gray-400 font-sans text-xs">de</span> R$ 15.000</p>
+                        </div>
                     </div>
-                
-                    <div>
-
-                        <h2>Carro</h2>
-                        <p>R$3.000 de R$15.000</p>
-
-                    </div>
-
-                    <div>
-
-                        <img src="./image/3 pontos.png" alt="Icone 3 pontos">
-
-                    </div>
+                    <button class="p-1 hover:bg-gray-50 rounded-full transition-colors flex items-center justify-center">
+                        <img src="./image/3 pontos.png" alt="Icone 3 pontos" class="w-5 h-5">
+                    </button>
                 </div>
 
-                <div>
-
-                    <div></div>
-                    <div></div>
-
-                    <p>20%</p>
-
+                <div class="mt-5 mb-3 flex items-center justify-between gap-4">
+                    <div class="w-full bg-[#dfdfdf] h-4 rounded-full overflow-hidden">
+                        <div class="bg-[#31af59] h-full rounded-full" style="width: 20%;"></div>
+                    </div>
+                    <p class="font-mono text-xs text-gray-600 font-semibold shrink-0">20%</p>
                 </div>
 
-                <div>
-
-                    <img src="./image/calendario.png" alt="Calendario">
-
-                    <data value="dia 25 do 2 de 2028">25/02/2028</data>
-
+                <div class="flex items-center gap-2 text-gray-500 font-mono text-xs">
+                    <img src="./image/calendario.png" alt="Calendario" class="w-4 h-4">
+                    <data value="25/02/2028">25/02/2028</data>
                 </div>
-
             </aside>
 
-           <aside>
-
-                <div>
-                    
-                    <div>
-
-                        <img src="./image/house.png" alt="House">
-
+            <aside class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between min-h-[175px]">
+                <div class="flex justify-between items-start">
+                    <div class="flex gap-4">
+                        <div class="bg-[#f1f0f9] p-3 rounded-xl flex items-center justify-center w-14 h-14 shrink-0">
+                            <img src="./image/house.png" alt="House" class="w-7 h-7 object-contain mix-blend-multiply">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800 tracking-tight">Entrada Casa</h2>
+                            <p class="text-gray-500 font-mono text-xs sm:text-sm mt-0.5">R$ 8.000 <span class="text-gray-400 font-sans text-xs">de</span> R$ 50.000</p>
+                        </div>
                     </div>
-                
-                    <div>
-
-                        <h2>Entrada Casa</h2>
-                        <p>R$8.000 de R$50.000</p>
-
-                    </div>
-
-                    <div>
-
-                        <img src="./image/3 pontos.png" alt="Icone 3 pontos">
-
-                    </div>
+                    <button class="p-1 hover:bg-gray-50 rounded-full transition-colors flex items-center justify-center">
+                        <img src="./image/3 pontos.png" alt="Icone 3 pontos" class="w-5 h-5">
+                    </button>
                 </div>
 
-                <div>
-
-                    <div></div>
-                    <div></div>
-
-                    <p>16%</p>
-
+                <div class="mt-5 mb-3 flex items-center justify-between gap-4">
+                    <div class="w-full bg-[#dfdfdf] h-4 rounded-full overflow-hidden">
+                        <div class="bg-[#31af59] h-full rounded-full" style="width: 16%;"></div>
+                    </div>
+                    <p class="font-mono text-xs text-gray-600 font-semibold shrink-0">16%</p>
                 </div>
 
-                <div>
-
-                    <img src="./image/calendario.png" alt="Calendario">
-
-                    <data value="dia 18 do 12 de 2037">18/12/2037</data>
-
+                <div class="flex items-center gap-2 text-gray-500 font-mono text-xs">
+                    <img src="./image/calendario.png" alt="Calendario" class="w-4 h-4">
+                    <data value="18/12/2037">18/12/2037</data>
                 </div>
-
             </aside>
 
-            <aside>
-
-                <div>
-                    
-                    <div>
-
-                        <img src="./image/loch.png" alt="Segurança">
-
+            <aside class="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between min-h-[175px]">
+                <div class="flex justify-between items-start">
+                    <div class="flex gap-4">
+                        <div class="bg-[#c8e6c9] p-3 rounded-xl flex items-center justify-center w-14 h-14 shrink-0">
+                            <img src="./image/loch.png" alt="Segurança" class="w-7 h-7 object-contain mix-blend-multiply">
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800 tracking-tight">Reserva</h2>
+                            <p class="text-gray-500 font-mono text-xs sm:text-sm mt-0.5">R$ 1.200 <span class="text-gray-400 font-sans text-xs">de</span> R$ 10.000</p>
+                        </div>
                     </div>
-                
-                    <div>
-
-                        <h2>Reserva</h2>
-                        <p>R$1.200 de R$10.000</p>
-
-                    </div>
-
-                    <div>
-
-                        <img src="./image/3 pontos.png" alt="Icone 3 pontos">
-
-                    </div>
+                    <button class="p-1 hover:bg-gray-50 rounded-full transition-colors flex items-center justify-center">
+                        <img src="./image/3 pontos.png" alt="Icone 3 pontos" class="w-5 h-5">
+                    </button>
                 </div>
 
-                <div>
-
-                    <div></div>
-                    <div></div>
-
-                    <p>12%</p>
-
+                <div class="mt-5 mb-3 flex items-center justify-between gap-4">
+                    <div class="w-full bg-[#dfdfdf] h-4 rounded-full overflow-hidden">
+                        <div class="bg-[#31af59] h-full rounded-full" style="width: 12%;"></div>
+                    </div>
+                    <p class="font-mono text-xs text-gray-600 font-semibold shrink-0">12%</p>
                 </div>
 
-                <div>
-
-                    <img src="./image/calendario.png" alt="Calendario">
-
-                    <data value="dia 9 do 10 de 2026">09/10/2026</data>
-
+                <div class="flex items-center gap-2 text-gray-400 font-mono text-xs">
+                    <img src="./image/calendario.png" alt="Calendario" class="w-4 h-4">
+                    <data value="09/10/2026">09/10/2026</data>
                 </div>
-
             </aside>
             
         </section>
-
     </main>
 
 </body>
